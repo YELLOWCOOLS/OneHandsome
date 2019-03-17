@@ -1,0 +1,28 @@
+<!--pages/calculator/calculator.wxml-->
+<view class="content">
+  <view class="xianshi">{{screenNum}}</view>
+  <view class="anniu">
+    <view class="item blue" bindtap="btnClick" id="{{n7}}">7</view>
+    <view class="item blue" bindtap="btnClick" id="{{n8}}">8</view>
+    <view class="item blue" bindtap="btnClick" id="{{n9}}">9</view>
+    <view class="item orange" bindtap="btnClick" id="{{na}}">+</view>
+  </view>
+   <view class="anniu">
+    <view class="item blue" bindtap="btnClick" id="{{n4}}">4</view>
+    <view class="item blue" bindtap="btnClick" id="{{n5}}">5</view>
+    <view class="item blue" bindtap="btnClick" id="{{n6}}">6</view>
+    <view class="item orange" bindtap="btnClick" id="{{nb}}">-</view>
+  </view>
+   <view class="anniu">
+    <view class="item blue" bindtap="btnClick" id="{{n1}}">1</view>
+    <view class="item blue" bindtap="btnClick" id="{{n2}}">2</view>
+    <view class="item blue" bindtap="btnClick" id="{{n3}}">3</view>
+    <view class="item orange" bindtap="btnClick" id="{{nc}}">*</view>
+  </view>
+   <view class="anniu">
+    <view class="item blue" bindtap="btnClick" id="{{n0}}">0</view>
+    <view class="item blue" bindtap="btnClear">AC</view>
+    <view class="item blue" bindtap="btnJs">=</view>
+    <view class="item orange" bindtap="btnClick" id="{{nd}}">/</view>
+  </view>
+</view>
