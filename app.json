@@ -2,14 +2,39 @@
   "pages": [
     "pages/index/index",
     "pages/calculator/calculator",
-    
-    "pages/logs/logs"
-    
+    "pages/rate/rate",
+    "pages/addCur/addCur"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "white",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "90计算",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    
+    "selecctedColor": "#ffffff",
+    "backgroundColor": "#eeeeee",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/img/index.jpg",
+        "selectedIconPath": "pages/img/index.jpg"
+      },
+      {
+        "pagePath": "pages/calculator/calculator",
+        "text": "计算器",
+        "iconPath": "pages/img/calculate.jpg",
+        "selectedIconPath": "pages/img/selectedcalculate.jpg"
+      },
+      {
+        "pagePath": "pages/rate/rate",
+        "text": "汇率转换",
+        "iconPath": "pages/img/rate.jpg",
+        "selectedIconPath": "pages/img/selectedrate.jpg"
+      }
+    ]
   }
 }
