@@ -964,6 +964,7 @@ Page({
           });
           var urll = "https://wapp.talk-easy.cn/currency/getcurrencyrate?" + jsonn;
 
+          
           console.info('urll:' + urll);
           wx.request({
             url: urll,

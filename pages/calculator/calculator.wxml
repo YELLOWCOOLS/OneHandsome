@@ -25,5 +25,4 @@
     <view class="item blue" bindtap="btnJs">=</view>
     <view class="item orange" bindtap="btnClick" id="{{nd}}">/</view>
   </view>
-  <view class='remain'></view>
 </view>

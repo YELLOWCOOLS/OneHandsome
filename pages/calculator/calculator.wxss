@@ -9,6 +9,7 @@
   overflow-x: hidden;
 }
 
+page{height:100%}
 .xianshi {
   text-align: right;
   width: 100%;
