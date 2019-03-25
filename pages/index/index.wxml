@@ -1,13 +1,17 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
+<view class="container" style='background-image:url("../../pages/img/bg.jpg")'>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class='line'>
+  <button class='button1' type='defalut' bindtap='logsimplycal' style='background-image:url("../../pages/img/calculate.jpg")' plain='true'>简易计算</button>
+  <button type='defalut' bindtap='logscience'>科学计算</button>
+  <button type='defalut' bindtap='logRate'style='background-image:url("../../pages/img/rate.jpg")'>汇率转换</button>
+  
+  </view>
+  <view class='line'>
+  <button type='defalut' bindtap='logload'>贷款计算</button>
+  <button type='defalut' bindtap='logRate'>税务计算</button>
+  <button type='defalut' bindtap='logBMI'>BMI计算</button>
   </view>
 </view>

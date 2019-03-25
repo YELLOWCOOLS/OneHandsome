@@ -1,9 +1,15 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/calculator/calculator",
+    "pages/load/load",
+    "pages/BMI/BMI",
+    
     "pages/rate/rate",
-    "pages/addCur/addCur"
+    "pages/addCur/addCur",
+    "pages/science_calculator/index",
+    "pages/super/index",
+    "pages/calculator/calculator",
+    "pages/loaddetail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,7 +18,6 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    
     "selecctedColor": "#ffffff",
     "backgroundColor": "#eeeeee",
     "position": "bottom",
@@ -24,7 +29,7 @@
         "selectedIconPath": "pages/img/index.jpg"
       },
       {
-        "pagePath": "pages/calculator/calculator",
+        "pagePath": "pages/science_calculator/index",
         "text": "计算器",
         "iconPath": "pages/img/calculate.jpg",
         "selectedIconPath": "pages/img/selectedcalculate.jpg"
@@ -32,6 +37,18 @@
       {
         "pagePath": "pages/rate/rate",
         "text": "汇率转换",
+        "iconPath": "pages/img/rate.jpg",
+        "selectedIconPath": "pages/img/selectedrate.jpg"
+      },
+      {
+        "pagePath": "pages/BMI/BMI",
+        "text": "BMI",
+        "iconPath": "pages/img/rate.jpg",
+        "selectedIconPath": "pages/img/selectedrate.jpg"
+      },
+      {
+        "pagePath": "pages/load/load",
+        "text": "贷款计算",
         "iconPath": "pages/img/rate.jpg",
         "selectedIconPath": "pages/img/selectedrate.jpg"
       }

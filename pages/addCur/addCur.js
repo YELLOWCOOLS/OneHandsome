@@ -1,7 +1,7 @@
 // pages/addCur/addCur.js
 //获取应用实例
 
-var util = require('../../utils/util.js')
+const util = require('../../utils/util.js')
 
 var app = getApp()
 Page({
@@ -964,7 +964,6 @@ Page({
           });
           var urll = "https://wapp.talk-easy.cn/currency/getcurrencyrate?" + jsonn;
 
-          
           console.info('urll:' + urll);
           wx.request({
             url: urll,

@@ -1,0 +1,23 @@
+<!--pages/BMI/BMI.wxml-->
+
+<view class='photo'>
+  <image  src="../img/BMI.jpg">  </image> 
+</view>
+
+<view class="inputView" style='margin-top:10%'>
+  <input class="input" type="number" placeholder="请输入身高（厘米）" placeholder-style="color: red" bindinput="listenerHeightInput" />
+</view>
+
+<view class="inputView">
+  <input class="input" type='digit' placeholder="请输入体重（千克）" placeholder-style="color: red"
+  bindinput="listenerWeightInput"/>
+</view>
+
+<button class='output' type="primary" bindtap="listenerCal">计算</button>
+<view wx:if="{{boolean==true}}">
+  <view class='resultBtn'>
+    <text class='tl' decode='{{true}}'>您的BMI指数为：&nbsp;{{result}}</text>
+    <text class='tl' decode='{{true}}'>您的身体状况为: &nbsp;{{status}}</text>
+    <text class='tl'>请继续努力哦！</text>
+  </view>
+</view>

@@ -9,6 +9,36 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  logsimplycal:function(){
+    wx.switchTab({
+      url: '../../pages/calculator/calculator',
+    })
+
+  },
+  logscience: function () {
+    wx.switchTab({
+      url: '../../pages/science_calculator/index',
+    })
+
+  },
+  logRate: function () {
+    wx.switchTab({
+      url: '../../pages/rate/rate',
+    })
+
+  },
+  logload: function () {
+    wx.switchTab({
+      url: '../../pages/load/load',
+    })
+
+  },
+  logBMI: function () {
+    wx.switchTab({
+      url: '../../pages/BMI/BMI',
+    })
+
+  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
