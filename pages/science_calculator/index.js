@@ -143,7 +143,7 @@ Page({
     //core.showActionSheet();
     this.clear();
     wx.setNavigationBarTitle({
-      title: '微信计算器'
+      title: '计算器'
     })
   },
   onReady: function() {
@@ -194,7 +194,7 @@ Page({
           break;
       case 's':
           wx.navigateTo({
-             url: '/pages/super/index?id=1'
+             url: '/pages/super/index'
           })
           break;
       case 'of':

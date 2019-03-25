@@ -3,13 +3,13 @@
     "pages/index/index",
     "pages/load/load",
     "pages/BMI/BMI",
-    
     "pages/rate/rate",
     "pages/addCur/addCur",
     "pages/science_calculator/index",
     "pages/super/index",
     "pages/calculator/calculator",
-    "pages/loaddetail/detail"
+    "pages/loaddetail/detail",
+    "pages/tax/tax"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -37,20 +37,20 @@
       {
         "pagePath": "pages/rate/rate",
         "text": "汇率转换",
-        "iconPath": "pages/img/rate.jpg",
-        "selectedIconPath": "pages/img/selectedrate.jpg"
-      },
-      {
-        "pagePath": "pages/BMI/BMI",
-        "text": "BMI",
-        "iconPath": "pages/img/rate.jpg",
-        "selectedIconPath": "pages/img/selectedrate.jpg"
+        "iconPath": "pages/img/rate.png",
+        "selectedIconPath": "pages/img/selectedrate.png"
       },
       {
         "pagePath": "pages/load/load",
         "text": "贷款计算",
-        "iconPath": "pages/img/rate.jpg",
-        "selectedIconPath": "pages/img/selectedrate.jpg"
+        "iconPath": "pages/img/load.png",
+        "selectedIconPath": "pages/img/selectedload.png"
+      },
+      {
+        "pagePath": "pages/tax/tax",
+        "text": "税务计算",
+        "iconPath": "pages/img/duty.png",
+        "selectedIconPath": "pages/img/selectedduty.png"
       }
     ]
   }

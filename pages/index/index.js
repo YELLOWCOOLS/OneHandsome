@@ -11,13 +11,19 @@ Page({
   },
   logsimplycal:function(){
     wx.switchTab({
-      url: '../../pages/calculator/calculator',
+      url: '../../pages/science_calculator/index',
     })
 
   },
   logscience: function () {
+    wx.navigateTo({
+      url: '../../pages/super/index',
+    })
+
+  },
+  logTax: function () {
     wx.switchTab({
-      url: '../../pages/science_calculator/index',
+      url: '../../pages/tax/tax',
     })
 
   },
@@ -34,7 +40,7 @@ Page({
 
   },
   logBMI: function () {
-    wx.switchTab({
+    wx.navigateTo({
       url: '../../pages/BMI/BMI',
     })
 
