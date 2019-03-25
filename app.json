@@ -3,13 +3,13 @@
     "pages/index/index",
     "pages/load/load",
     "pages/BMI/BMI",
-    
     "pages/rate/rate",
     "pages/addCur/addCur",
     "pages/science_calculator/index",
     "pages/super/index",
     "pages/calculator/calculator",
-    "pages/loaddetail/detail"
+    "pages/loaddetail/detail",
+    "pages/tax/tax"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,10 +23,10 @@
     "position": "bottom",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "pages/img/index.jpg",
-        "selectedIconPath": "pages/img/index.jpg"
+        "pagePath": "pages/tax/tax",
+        "text": "税务计算",
+        "iconPath": "pages/img/rate.jpg",
+        "selectedIconPath": "pages/img/selectedrate.jpg"
       },
       {
         "pagePath": "pages/science_calculator/index",
