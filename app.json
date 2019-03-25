@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/calculator/calculator",
     "pages/rate/rate",
-    "pages/addCur/addCur"
+    "pages/addCur/addCur",
+    "pages/science_calculator/index",
+    "pages/super/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,7 +14,6 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    
     "selecctedColor": "#ffffff",
     "backgroundColor": "#eeeeee",
     "position": "bottom",
@@ -24,7 +25,7 @@
         "selectedIconPath": "pages/img/index.jpg"
       },
       {
-        "pagePath": "pages/calculator/calculator",
+        "pagePath": "pages/science_calculator/index",
         "text": "计算器",
         "iconPath": "pages/img/calculate.jpg",
         "selectedIconPath": "pages/img/selectedcalculate.jpg"
