@@ -97,8 +97,8 @@
 .table {
   width: 100%;
 
-
-.table {
+}
+.table{
 
   border: 0px solid darkgray;
 }
