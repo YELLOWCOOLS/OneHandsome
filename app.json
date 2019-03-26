@@ -23,10 +23,10 @@
     "position": "bottom",
     "list": [
       {
-        "pagePath": "pages/tax/tax",
-        "text": "税务计算",
-        "iconPath": "pages/img/rate.jpg",
-        "selectedIconPath": "pages/img/selectedrate.jpg"
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/img/index.jpg",
+        "selectedIconPath": "pages/img/index.jpg"
       },
       {
         "pagePath": "pages/science_calculator/index",
