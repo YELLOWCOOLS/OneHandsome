@@ -228,7 +228,7 @@ Page({
     if(!flash){
         content = oldInfix+lastNum+content;
     }
-    console.log(content);
+    // console.log(content);
     this.setData({
       infix:content
     }); 

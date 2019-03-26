@@ -55,7 +55,7 @@ function toRPolish(s){
 	op.Init();
 	//var num=str.match(/\d+(\.\d+)?/g);
 	var i=0;
-  var level1 = ['t', 's', 'c', 'l', '^','√'];
+  var level1 = ['t', 's', 'c', 'l', '^','√','!'];
   var level2 = ['×', '÷'];
   var level3 = ['+', '-'];
 	while(i<s.length){
@@ -160,7 +160,7 @@ function g(a,b,c){
 function T(a,c){
   var v =0;
   a = parseFloat(a);
-  console.log(a);
+  // console.log(a);
   switch(c){
     case "c":
         v = Math.cos(a);
@@ -177,14 +177,30 @@ function T(a,c){
     case "m":
         v = Math.log(a)/Math.LN10;
         break;
+    case '!':
+        v = factorial(a);
+        break;
+    case '√':
+        v= Math.sqrt(a);
+        break;
   }
   return v;
 }
 
+function factorial(num) {
+  if (num < 0) {
+    return -1;
+  } else if (num === 0 || num === 1) {
+    return 1;
+  } else {
+    return (num * factorial(num - 1));
+  }
+};
+
 
 
 function getResult(list,result){
-  var level1 = ['t', 's', 'c', 'm', 'n','√'];
+  var level1 = ['t', 's', 'c', 'm', 'n','√','!'];
  
 	for (var i=0;i<list.length;i++){
 		if(!isNaN(list[i])){

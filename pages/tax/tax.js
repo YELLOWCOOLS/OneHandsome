@@ -24,14 +24,15 @@ Page({
     })
   },
   get_curent_tax:function(){
-    console.log(this.data.all_money);
-    console.log(this.data.all_kou_money);
-    console.log(this.data.num);
+    console.log("all_money       "+this.data.all_money);
+    console.log("all_kou_money        "+this.data.all_kou_money);
+    console.log("data.num         "+this.data.num);
 
 
     var money =   this.data.all_money-this.data.all_kou_money-5000*this.data.num;
     var ins = 0;
-    
+    console.log("money        "+money);
+
     if (money<=0){
       
       return 0;
@@ -50,13 +51,28 @@ Page({
     }else{
       ins = money*0.45-181920;
     }
+    console.log("ins1        " + ins);
     ins = ins - this.data.all_tax;
+    console.log("ins1        " + ins);
     ins = ins.toFixed(2);
-    var all_tax = this.all_tax+ins;
+    console.log("ins2        " + ins);
+    var all_tax = Number(this.data.all_tax)+Number(ins);
+    console.log("all        " + all_tax);
     this.setData({
       all_tax :all_tax
     })
     return ins;
+  },
+  deleteAll:function(){
+    this.setData({
+      num:0,
+      all_money:0,
+      all_kou_money:0,
+      all_tax:0,
+      money:0,
+      kou_money:0,
+      month_money:[]
+    })
   },
   addNewMonth:function(){
     var kou_money = Number(this.data.kou_money);
@@ -86,10 +102,7 @@ Page({
     this.setData({
       month_money: datas
     })
-    this.setData({
-      kou_money: 0,
-      money: 0
-    })
+    
     
   },
   

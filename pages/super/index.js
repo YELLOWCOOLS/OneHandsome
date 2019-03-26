@@ -243,7 +243,7 @@ Page({
           break;
       case 't':
           this.clearAll();
-          console.log(util.formatTime(new Date()));
+          // console.log(util.formatTime(new Date()));
           this.output([util.formatTime(new Date())]);
           break;
       case 'of':
@@ -260,6 +260,7 @@ Page({
           var res = this.calculator();
           this.output([this.data.line,res],true);
           break;
+    
       default:
           this.makeInfix(content);
           this.output([content],true);    
@@ -271,23 +272,36 @@ Page({
     content = content ? content : ""; 
     var oldInfix = this.data.infix.toString();
     var lastNum = this.data.lines[(this.data.lines.length-1)].toString();
-    var level1 = ["tan", "cos", "sin", "ln", "lg","√"];
+    var level1 = ["tan", "cos", "sin", "ln", "lg", "√","!"];
     if(oldInfix == "0"){
       oldInfix = "";
     }
     // console.log("oldInfix:"+oldInfix);
     // console.log("lastNum:"+lastNum);
     // console.log("content:"+content);
-    if (level1.indexOf(content) > -1 || content== 'e' || content== 'π'){
+    if(!flash){
+    if(content == '!'){
+      content = content+lastNum;
+    }else if(lastNum =='!'){
+      content = oldInfix;
+    }
+    else if (level1.indexOf(content) > -1){
       content = oldInfix+content;
-    }else if(!flash){
+    } else if (content == 'e' || content =='π'){
+        content = oldInfix;
+      this.setData({
+        infix: content
+      }); 
+      return ;
+    }else {
         content = oldInfix+lastNum+content;
+    }
     }
     
     this.setData({
       infix:content
     }); 
-    console.log(content);
+    // console.log(content);
   },
   getNumber:function(content){
     var lines = this.data.lines;

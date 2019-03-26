@@ -18,7 +18,7 @@
   
   <view class="actions" style="bottom:{{actionsBottom}}px">
     <button class ='btn' type="primary" bindtap="addNewMonth">添加</button>
-    <button class ='btn' type="primary" bindtap="calculateLoan">开始计算</button>
+    <button class ='btn' type="primary" bindtap="deleteAll">清空</button>
   </view>
 
   <view class="details" wx:if="{{num > 0}}">
@@ -45,10 +45,4 @@
                 </view>
     </view>
   </view>
-<<<<<<< HEAD
-
-  
-
-=======
->>>>>>> parent of 08caddd... Merge branch 'master' of https://github.com/YELLOWCOOLS/OneHandsome
 </view>
