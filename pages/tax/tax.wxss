@@ -95,13 +95,11 @@
 }
 .table {
   width: 100%;
-<<<<<<< HEAD
+
 
 }
 .table{
 
-=======
->>>>>>> parent of 08caddd... Merge branch 'master' of https://github.com/YELLOWCOOLS/OneHandsome
   border: 0px solid darkgray;
 }
 .tr {
