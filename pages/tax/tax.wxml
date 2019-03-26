@@ -1,4 +1,4 @@
-<!--pages/tax/tax.wxml-->
+<!--pages/load/load.wxml-->
 
 <view class="container">
 <label>请输入本年度至今所有月份数据</label>
@@ -45,7 +45,10 @@
                 </view>
     </view>
   </view>
+<<<<<<< HEAD
 
   
 
+=======
+>>>>>>> parent of 08caddd... Merge branch 'master' of https://github.com/YELLOWCOOLS/OneHandsome
 </view>
